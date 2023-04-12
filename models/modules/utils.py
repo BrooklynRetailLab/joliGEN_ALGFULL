@@ -9,6 +9,9 @@ from torch.optim import lr_scheduler
 import wget
 import os
 
+from util.util import tensor2im
+from segment_anything import SamAutomaticMaskGenerator, sam_model_registry
+
 ##########################################################
 # Fonctions used for networks initialisation
 ##########################################################
